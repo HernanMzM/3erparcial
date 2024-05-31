@@ -20,5 +20,5 @@ int main(){
         cout<<"Has excedido el número máximo de intentos\n";
     }
 	}while(co<3);
-	cout<<"numero de intentos realizados "<<nco;
+	cout<<"numero de intentos realizados "<<co;
 }
