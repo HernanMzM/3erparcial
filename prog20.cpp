@@ -11,5 +11,4 @@ int main(){
 		res*=num;
 	}
 	cout<<"el numero elevado al cuadrado "<<res<<"\n";
-
 }
