@@ -1,4 +1,4 @@
-//no imprime los numeros al reverso
+//ya funciona
 #include <iostream>
 using namespace std;
 int main(){
