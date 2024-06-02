@@ -1,4 +1,3 @@
-#define _WIN32_WINNT 0x0500 // Es necesaria esta definicion para esconder ventana de consola
 #include <windows.h> // Libreria que contiene las funciones de Winapi
 #define bt1 101
 #define bt2 102
@@ -48,8 +47,7 @@ int WINAPI WinMain (HINSTANCE hThisInstance,HINSTANCE hPrevInstance, LPSTR lpszA
 
            );
     /* Hacemos que la ventana sea visible */
-    ShowWindow (ventana1, nCmdShow);
-    ShowWindow(GetConsoleWindow(), SW_HIDE ); // Funcion para esconder la ventana de consola
+    ShowWindow (ventana1, nCmdShow); 
     /* Hacemos que la ventan se ejecute hasta que se obtenga resturn 0 */
     while (GetMessage (&mensajecomunica, NULL, 0, 0))
     {
