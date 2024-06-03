@@ -1,3 +1,5 @@
+//Modifica el programa que al ingresar los tres numeros iguales sea el acceso permitido
+
 #include <iostream>
 using namespace std;
 int main(){
