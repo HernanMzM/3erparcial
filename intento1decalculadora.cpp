@@ -34,8 +34,6 @@ HWND button12, button13, button14, button15, button16,editDisplay;
 HINSTANCE g_hInstance;
 
 double evaluateExpression(const char* expression) {
-    // Aquí puedes implementar una lógica de evaluación de expresiones más completa si lo deseas
-    // Esta es una implementación muy básica y no segura
     double result = 0.0;
     char oper = 0;
     double number = 0.0;
@@ -109,6 +107,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszArgum
 
 LRESULT CALLBACK WindowProcedure(HWND ventana, UINT mensaje, WPARAM wParam, LPARAM lParam) {
     switch (mensaje) {
+        
     case WM_CREATE:
         editDisplay = CreateWindowEx(0, "EDIT", NULL, WS_CHILD | WS_VISIBLE | WS_BORDER | ES_RIGHT, 10, 10, 470, 100, ventana, (HMENU)IDC_EDIT_DISPLAY, g_hInstance, NULL);
 

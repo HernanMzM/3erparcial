@@ -17,4 +17,6 @@ int main(){
 		}
 			if (co >= 3) {
         cout<<"Has excedido el número máximo de intentos\n";
-    }
+    	}
+    }while(co<3);
+}

@@ -1,10 +1,13 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
-
+int factura(int precio, int cantidad){
+    int total=0;
+    total=precio*cantidad;
+}
 int main() {
     char pass[12], name[20];
-    int co, i, precio, cantidad, total, co2;
+    int co,i,precio,cantidad,total=1,co2;
     co = 0;
     co2 = 0;
     
@@ -24,13 +27,11 @@ int main() {
         }
     } while (co < 3);
 
-    do {
+    while(co<4) {
         cout << "introduzca el precio del articulo\n";
         cin >> precio;
-        if (precio < 0) {
-            cout << "ingrese un numero positivo\n";
-            continue;
-        }
+
+        co2=co2+factura(precio,cantidad);
 
         if (precio == 0) {
             break;
@@ -44,12 +45,15 @@ int main() {
             continue;
         }
 
-        total = precio * cantidad;
+        for(i=1;i==cantidad;i++){
+            printf("%i\n",&i);
+        }
+        total=precio*i*cantidad;
         co2 += total;
 
-    } while (cantidad > 0);
+    } 
 
-    cout << "El importe total es de " << co2 << "\n";
+    cout << "El importe total es de " << co2 << endl;
 
     return 0;
 }
