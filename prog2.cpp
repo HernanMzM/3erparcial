@@ -1,3 +1,5 @@
+//Al programa modifica para que imprima el numero menor y mayor
+
 #include <iostream>
 using namespace std;
 int main(){
