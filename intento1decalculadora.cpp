@@ -104,4 +104,4 @@ LRESULT CALLBACK WindowProcedure (HWND otro, UINT mensajecomunica, WPARAM wParam
             return DefWindowProc (otro, mensajecomunica, wParam, lParam);
     }
 return 0;
-}
+}//me desvie del tema por un tutorial de youtube
