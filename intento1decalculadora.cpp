@@ -52,7 +52,7 @@ double evaluateExpression(const char* expression) {
             } else {
                 result = number;
             }
-        } else if (p == '+' || *p == '-' || *p == '' || *p == '/') {
+        } else if (*p == '+' || *p == '-' || *p == '*' || *p == '/') {
             oper = *p;
             p++;
         } else {
@@ -200,6 +200,14 @@ LRESULT CALLBACK WindowProcedure(HWND ventana, UINT mensaje, WPARAM wParam, LPAR
         case bt15:
             strcat(displayText, "/");
             SetWindowText(GetDlgItem(ventana, IDC_EDIT_DISPLAY), displayText);
+            break;
+        case bt16:
+            // Evaluar la expresión y mostrar el resultado
+            {
+                double result = evaluateExpression(displayText);
+                sprintf(displayText, "%g", result);
+                SetWindowText(GetDlgItem(ventana, IDC_EDIT_DISPLAY), displayText);
+            }
             break;
         }
         if (wParam == bt11) {
