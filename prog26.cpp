@@ -45,11 +45,7 @@ int main() {
             continue;
         }
 
-        for(i=1;i==cantidad;i++){
-            printf("%i\n",&i);
-        }
-        total=precio*i*cantidad;
-        co2 += total;
+        co2=co2+factura(precio,cantidad);
 
     } 
 
