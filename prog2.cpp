@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-	int num,menor;
+	int num,menor,mayor=0;
 	cout<<"ingrese 5 numeros enteros\n";
 	cin>>num;
 	menor=num;
@@ -11,7 +11,11 @@ int main(){
 		cin>>num;
 		if(num<menor){
 			menor=num;
+		}else if(num>mayor)
+		{
+			mayor=num;
 		}
 	}
 	cout<<"el numero menor es "<<menor;
+	cout<<"\nel numero mayor es "<<mayor;
 }
